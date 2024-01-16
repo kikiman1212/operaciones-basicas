@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="img/K.png">
+    <title>Multiplicaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/multiplicaciones.css">
+</head>
+<body>
+    <nav>
+            <a href="index.html" class="active">Inicio</a>
+	    <a href="sumas.html">Sumas</a>
+	    <a href="#" class="active2">Multiplicaciones</a>
+	    <a href="diviciones.html">Diviciones</a>
+            <a href="restas.html" ">Restas</a>
+    </nav>
+    
+    <section>
+        <article>
+            <p>Practica de operaciones basicas de Multiplicación<h3>"Aprender practicando"</h3></p>
+        </article>
+	<div class="final">
+        <button onclick="resultadoFinal()" class="resultadoTotal">Resultado Final</button>
+	</div>
+
+    <div class="mainMultiplicacion" id=""> 
+      <input class="mult1" type="number" readonly><h1>✖</h1>
+      <br>
+      <input class="mult2" type="number" readonly><h1>=</h1>
+      <br>
+      <input class="mult3" type="number">  
+    </div>
+
+
+	<div class="main2" id="boton">
+    <button onclick="comprobarMultiplicacion()" class="compruebaMultiplicacion" id="resultadoMultiplicacion">Comprobar Multiplicación</button>
+	</div>
+<div class="resul">	
+<div class="resultado">Tu resultado de tu Operación es:</div>
+<div class="resultadoTotal2">Tu resultado Final es: </div>
+</div>
+
+<div class="monedas"></div>
+<div class="fallas"></div>
+
+    </section>
+
+   <footer><h2>©kiko Ramirez||2023</h2>
+      <img src="img/K.png">
+      <a href="https://open.spotify.com/playlist/3o62TCAuREsoYxvE8VwiOj?si=0fc2175c3f8e43f6" target="_blank"><img src="img/spo2.png"></a>
+      <a href="https://www.tiktok.com/@kikiman1212" target="_blank"><img src="img/tik.png"></a>
+    <a href="https://youtu.be/jvLTTSJm6BM" target="_blank"><img src="img/YOU.png"></a></footer>
+
+	<script src="js/multiplicaciones.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/sweetAlert.js"></script>
+
+</body>
+</html>
