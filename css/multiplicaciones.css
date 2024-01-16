@@ -4,7 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+section{
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 .final{
     margin-top: -20px;
@@ -329,7 +336,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 620px){
 
 .resultado{
 width:300px;
@@ -337,8 +344,21 @@ height:200px;
 font-size: 20px;
 }
 
+.resultadoTotal, .comprueba{
+font-size:15px;
+height: 25px;
+}
 
+h2{
+font-size:15px;
 
+}
+input {
+    width: 80px;
+    height: 60px;
+    font-family: fantasy;
+    font-size: 30px;
+}
 .resultadoTotal2 {
 width: 350px;
 font-size: 15px;

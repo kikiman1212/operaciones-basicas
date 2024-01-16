@@ -5,7 +5,14 @@
     box-sizing: border-box;
 }
 
-
+section{
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 .contenedor{
 background-image: linear-gradient(to bottom, black 0%, black 50%, rgba(0,0,0, .5)  85% , transparent 100% );
@@ -424,7 +431,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 620px){
+
+.resultadoTotal, .comprueba{
+font-size:15px;
+height: 25px;
+}
+
+h2{
+font-size:15px;
+
+}
+
+
 
 .resul{
 width:400px
