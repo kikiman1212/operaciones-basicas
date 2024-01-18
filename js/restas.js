@@ -78,13 +78,15 @@ function dibujarFallas(){
 function comprobarResta(){
      let c = Number(document.querySelector(".rest3").value);
     if (c == restaCorrecta){
-        document.querySelector('.resultado').innerHTML=(`Resultado <span${c}</span> es Correcto ✔🏆`) ;
+        document.querySelector('.resultado').innerHTML=(`Resultado <span>${c}</span> es Correcto ✔🏆`) ;
         document.querySelector('.resultado').style.color = "rgb(43, 246, 25)";
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
-    }else{
-        document.querySelector('.resultado').innerHTML=(`Resultado de ${c} es Incorrecto ❌😥, El Resultado correcto de ${a} ➖ ${b} es: <span${restaCorrecta}</span>😎😑.`);
+    }else if(c == ""){
+alert("Introduce un resultado en la resta, por favor");
+}else{
+        document.querySelector('.resultado').innerHTML=(`Resultado de <span> ${c}</span> es Incorrecto ❌😥, El Resultado correcto de ${a} ➖ ${b} es: <span>${restaCorrecta}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;

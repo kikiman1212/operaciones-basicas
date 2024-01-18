@@ -84,8 +84,12 @@ function comprobarDivicion(){
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
-    }else{
-        document.querySelector('.resultado').innerHTML=(`Resultado de ${c} es Incorrecto ❌😥, El Resultado correcto de ${a} ➗ ${b} es:<span> ${divicionCorrecta.toFixed(2)}</span>😎😑.`);
+    
+ }else if(c == ""){
+alert("Introduce un resultado en la divición, por favor");
+
+}else{
+        document.querySelector('.resultado').innerHTML=(`Resultado de <span> ${c}</span> es Incorrecto ❌😥, El Resultado correcto de ${b} ➗ ${a} es:<span> ${divicionCorrecta.toFixed(2)}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;
