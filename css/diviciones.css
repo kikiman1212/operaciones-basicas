@@ -116,11 +116,11 @@ input:hover{
     align-items: center;
     justify-content: center;
     width: 250px;
-    height: 60px;
+    height: 30px;
     border: 1px solid #36e2ec;
     border-radius:20px;
     color: #fff;
-    font-size:25px;
+    font-size:20px;
     font-weight: 400;
     transition: .5s linear;
     cursor: pointer;
@@ -206,15 +206,14 @@ button:hover{
 .resultadoTotal{
    background:#36e2ec;
     width: 260px;
-    height: 45px;
-    padding: 5px;
+    height: 30px;
     width:300px;
     position: relative;
     display: flex;
     text-align: center;
     justify-content: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     border-radius:20px;
     z-index: 30;
    font-weight: 400;
@@ -250,7 +249,7 @@ color: gray;
 
 .resultadoTotal2 img{
 margin: 5px;	
-width: 250px;
+width: 220px;
 
 }
 p{font-family: fantasy, serif;
@@ -258,29 +257,7 @@ p{font-family: fantasy, serif;
     color: black;
 }
 
-footer{
-	position: relative;
-  	left: 0;
- 	bottom: 0;
- 	width: 100%;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        background-color: black;
-        padding: 10px 0px;
-        font-size: 30px;
-        color: #fff;
-	 z-index:45;
-}
-   
 
-  footer img {
-        display: flex;
-        align-items: center;
-        width:30px;
-        margin-left:10px;
-        cursor: pointer;
-    }
 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -294,7 +271,13 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
 }
 
+
 @media only screen and (max-width: 620px){
+
+.navbar-brand{
+display: none;
+}
+
 
 .resultado{
 width:300px;
@@ -327,25 +310,5 @@ font-size: 15px;
     width: 200px;
 }
 
-footer{ 
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-	display: flex;
-   	justify-content:center;
-    	align-items: center;
-    	padding: 10px 0px;
-    	font-size: 20px;
-         z-index:45;  
-}
-
-footer img {
-   display: flex;
-   align-items: center;
-	width:20px;
-	margin-left:5px;
-   cursor: pointer;
-}
 
 }

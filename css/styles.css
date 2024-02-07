@@ -36,16 +36,6 @@ section{
 }
 
 
-  
-
-  
-nav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-
-
 section img{
 position: relative;
     width:100%;
@@ -84,6 +74,9 @@ iframe{
 article{
   text-align: center;
 }
+.active{
+  background: #36e2ec;
+}
 
 p{
   margin-bottom: 20px ;
@@ -93,3 +86,10 @@ a{
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 620px){
+
+  .navbar-brand{
+      display: none;
+      }
+
+    }

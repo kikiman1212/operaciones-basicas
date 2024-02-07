@@ -32,7 +32,7 @@ function inicio(){
 
 function resultadoFinal(){
         let resul = monedas - fallas;
-	if(resul >= fallas){
+	if(resul > fallas){
 	document.querySelector('.resultadoTotal2').style.display ='flex';
 	document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span>${resul}</span> 🏆 Eres un Master sigue asi campeón<img src="img/gif/victory.gif"> <img src="img/gif/5.gif" >`);
 	sonidoGanador.play();

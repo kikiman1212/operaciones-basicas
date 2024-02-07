@@ -110,11 +110,11 @@ input:hover{
     align-items: center;
     justify-content: center;
     width: 250px;
-    height: 60px;
+    height: 30px;
     border: 1px solid #36e2ec;
     border-radius:20px;
     color: #fff;
-    font-size:30px;
+    font-size:20px;
     font-weight: 400;
     transition: .5s linear;
     cursor: pointer;  
@@ -196,15 +196,14 @@ button:hover{
 .resultadoTotal{
    background:#36e2ec;
     width: 260px;
-    height: 45px;
-    padding: 5px;
+    height: 30px;
     width:300px;
     position: relative;
     display: flex;
     text-align: center;
     justify-content: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     border-radius:20px;
     z-index: 30;
    font-weight: 400;
@@ -221,7 +220,7 @@ color: gray;
 .resultadoTotal2{
     margin: 20px;
     width: 500px;
-    height: 400px;
+    height: 460px;
     background: #1b2688;
     position: relative;
     border-radius: 10px;
@@ -240,7 +239,7 @@ color: gray;
 
 .resultadoTotal2 img{
 margin: 5px;	
-width: 200px;
+width: 220px;
 
 }
 p{font-family: fantasy, serif;
@@ -269,6 +268,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 620px){
 
+    .navbar-brand{
+        display: none;
+        }
 
 .resultado{
 width:300px;

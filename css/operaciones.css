@@ -410,6 +410,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 620px){
 
+    .navbar-brand{
+        display: none;
+        }
 .resultadoTotal, .comprueba{
 font-size:15px;
 height: 25px;

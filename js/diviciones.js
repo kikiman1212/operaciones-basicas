@@ -25,7 +25,7 @@ function inicio(){
    dibujarMonedas();
    dibujarFallas();
    
-    document.querySelector('.comprueba').onclick = comprobar;
+   
     document.querySelector('.compruebaDivicion').onclick = comprobarDivicion;
     document.querySelector('.resultadoTotal').onclick = resultadoFinal;
 }
@@ -51,7 +51,7 @@ document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
 sonidoGameOver.play();        
 }
-preguntar();
+preguntarDivicion();
 }
 
 
