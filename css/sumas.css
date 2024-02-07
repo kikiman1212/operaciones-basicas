@@ -39,7 +39,6 @@ color: red;
 
 .main{
     margin-top:20px;
- 
     position: relative;
     display: flex;
     justify-content: center;
@@ -190,7 +189,7 @@ button:hover{
 	backdrop-filter: blur(30px);
         border: 2px solid green;
         background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68;0.0.3);
+        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
         line-height: 1.5;
 }
 
@@ -209,7 +208,7 @@ button:hover{
 	backdrop-filter: blur(30px);
         border: 2px solid red;
         background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68;0.0.3);
+        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
         line-height: 1.5;
 }
 
@@ -217,7 +216,6 @@ button:hover{
    background:#36e2ec;
     width: 260px;
     height: 45px;
-    background:;
     padding: 5px;
     width:300px;
     position: relative;
@@ -269,29 +267,7 @@ p{font-family: fantasy, serif;
     color: black;
 }
 
-footer{
-	position: relative;
-  	left: 0;
- 	bottom: 0;
- 	width: 100%;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        background-color: black;
-        padding: 10px 0px;
-        font-size: 30px;
-        color: #fff;
-	 z-index:45;
-}
-   
 
-  footer img {
-        display: flex;
-        align-items: center;
-        width:30px;
-        margin-left:10px;
-        cursor: pointer;
-    }
 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -329,18 +305,7 @@ input{
     font-size: 30px;
 }
 
-footer{ 
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-	display: flex;
-   	justify-content:center;
-    	align-items: center;
-    	padding: 10px 0px;
-    	font-size: 20px;
-         z-index:45;  
-}
+
 
 .resultadoTotal, .comprueba{
 font-size:15px;
@@ -351,12 +316,6 @@ h2{
 font-size:15px;
 
 }
-footer img {
-   display: flex;
-   align-items: center;
-	width:20px;
-	margin-left:5px;
-   cursor: pointer;
-}
+
 
 }

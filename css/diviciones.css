@@ -178,7 +178,7 @@ button:hover{
 	backdrop-filter: blur(30px);
         border: 2px solid green;
         background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68;0.0.3);
+        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
         line-height: 1.5;
 }
 
@@ -199,7 +199,7 @@ button:hover{
 	backdrop-filter: blur(30px);
         border: 2px solid red;
         background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68;0.0.3);
+        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
         line-height: 1.5;
 }
 
@@ -207,7 +207,6 @@ button:hover{
    background:#36e2ec;
     width: 260px;
     height: 45px;
-    background:;
     padding: 5px;
     width:300px;
     position: relative;
