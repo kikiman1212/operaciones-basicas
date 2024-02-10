@@ -1,10 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
+body{
+  font-family: 'Poppins', sans-serif;
+ 
+}
 section{
     width: 75%;
     height: 100%;
@@ -111,25 +117,7 @@ input:hover{
    border: #fff solid 4px;
 }
 
-.comprueba{
-    background:#36e2ec;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 30px;
-    border: 1px solid #36e2ec;
-    border-radius:20px;
-    color: #fff;
-    font-size:20px;
-    font-weight: 400;
-    transition: .5s linear;
-    cursor: pointer;
-}
-.comprueba:hover {
-   background: none;
-  border: 2px solid #36e2ec;	
-   color: gray;
-}
+
 
 .compruebaSumas{
     width: 250px;
@@ -212,29 +200,7 @@ button:hover{
         line-height: 1.5;
 }
 
-.resultadoTotal{
-   background:#36e2ec;
-    width: 260px;
-    height: 30px;
-    width:300px;
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 20px;
-    border-radius:20px;
-    z-index: 30;
-   font-weight: 400;
-    transition: .5s linear;
-   cursor: pointer;
-}
 
-.resultadoTotal:hover{
-background:none;
-border: 2px solid #36e2ec;
-color: gray; 
-}
 
 .resultadoTotal2{
     margin: 20px;
@@ -280,6 +246,28 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
 }
 
+
+
+.btn-outline-danger{
+    display: none;
+}
+i{
+    font-size: 25px;
+    color: red;
+}
+
+.bi-github{
+    font-size: 25px;
+    color: black;
+}
+
+.bi-tiktok{
+    font-size: 25px;
+    color: black;
+}
+ a{
+text-decoration: none;
+}
 @media only screen and (max-width: 620px){
 
     .navbar-brand{

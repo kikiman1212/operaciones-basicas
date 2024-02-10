@@ -25,9 +25,8 @@ function inicio(){
    dibujarMonedas();
    dibujarFallas();
    
-    document.querySelector('.comprueba').onclick = comprobar;
-    document.querySelector('.compruebaSuma').onclick = comprobarSuma;
-    document.querySelector('.resultadoTotal').onclick = resultadoFinal;
+    document.querySelector('#resultadoSuma').onclick = comprobar;
+    document.querySelector('#resultadofinal').onclick = resultadoFinal;
 }
 
 function resultadoFinal(){
@@ -41,6 +40,8 @@ function resultadoFinal(){
         document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
+document.querySelector('#resultadofinal').style.display ='none';
+document.querySelector('#inicio').style.display ='flex';
 }else{
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
@@ -49,7 +50,9 @@ document.querySelector('.mainSuma').style.display ='none';
 document.querySelector('.main2').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
-sonidoGameOver.play();        
+sonidoGameOver.play();  
+document.querySelector('#resultadofinal').style.display ='none';
+document.querySelector('#inicio').style.display ='flex';      
 }
 preguntar();
 }
@@ -65,12 +68,14 @@ function comprobar(){
 	monedas++;
 	
 	sonido1.play();
+    
     }else{
         document.querySelector('.resultado').innerHTML=(`Resultado de <span > ${c}</span> es Incorrecto ❌😥, El Resultado correcto de ${a} + ${b} es: <span>${sumaCorrecta}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;
 	sonidoError.play();
+   
     }
     preguntar();
 

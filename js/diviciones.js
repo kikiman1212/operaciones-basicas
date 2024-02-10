@@ -25,9 +25,8 @@ function inicio(){
    dibujarMonedas();
    dibujarFallas();
    
-   
-    document.querySelector('.compruebaDivicion').onclick = comprobarDivicion;
-    document.querySelector('.resultadoTotal').onclick = resultadoFinal;
+    document.querySelector('#resultadoResta').onclick = comprobarDivicion;
+    document.querySelector('#terminar').onclick = resultadoFinal;
 }
 
 function resultadoFinal(){
@@ -40,16 +39,21 @@ function resultadoFinal(){
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 document.querySelector('.main2').style.display ='none';
-document.querySelector('.compruebaDivicion').style.display ='none';
+document.querySelector('#resultadoResta').style.display ='none';
+document.querySelector('#terminar').style.display ='none';
+document.querySelector('#inicio').style.display ='flex';
 }else{
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 document.querySelector('.main2').style.display ='none';
-document.querySelector('.compruebaDivicion').style.display ='none';
+document.querySelector('#resultadoResta').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
-sonidoGameOver.play();        
+sonidoGameOver.play(); 
+document.querySelector('#terminar').style.display ='none';
+document.querySelector('#inicio').style.display ='flex';  
+
 }
 preguntarDivicion();
 }
@@ -84,16 +88,14 @@ function comprobarDivicion(){
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
-    
- }else if(c == ""){
-alert("Introduce un resultado en la divición, por favor");
-
+     
 }else{
         document.querySelector('.resultado').innerHTML=(`Resultado de <span> ${c}</span> es Incorrecto ❌😥, El Resultado correcto de ${b} ➗ ${a} es:<span> ${divicionCorrecta.toFixed(2)}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;
 	sonidoError.play();
+  
     }
     preguntarDivicion();
     }

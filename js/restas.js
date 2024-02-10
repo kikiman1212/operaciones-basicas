@@ -42,6 +42,7 @@ document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 document.querySelector('.main2').style.display ='none';
 document.querySelector('.mainResta').style.display ='none';
+document.querySelector('.resultadoTotal').diabled;
 }else{
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
@@ -50,7 +51,8 @@ document.querySelector('.main2').style.display ='none';
 document.querySelector('.mainResta').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
-sonidoGameOver.play();        
+sonidoGameOver.play();  
+document.querySelector('.resultadoTotal').diabled;      
 }
 preguntar();
 }
@@ -83,8 +85,6 @@ function comprobarResta(){
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
-    }else if(c == ""){
-alert("Introduce un resultado en la resta, por favor");
 }else{
         document.querySelector('.resultado').innerHTML=(`Resultado de <span> ${c}</span> es Incorrecto ❌😥, El Resultado correcto de ${a} ➖ ${b} es: <span>${restaCorrecta}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";

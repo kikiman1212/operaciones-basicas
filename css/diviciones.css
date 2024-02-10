@@ -1,8 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+ 
 }
 section{
     width: 75%;
@@ -110,8 +117,27 @@ input:hover{
    cursor: pointer;
    border: #fff solid 4px;
 }
+.btn-outline-danger{
+    display: none;
+}
+i{
+    font-size: 25px;
+    color: red;
+}
 
-.compruebaDivicion{
+.bi-github{
+    font-size: 25px;
+    color: black;
+}
+
+.bi-tiktok{
+    font-size: 25px;
+    color: black;
+}
+ a{
+text-decoration: none;
+}
+/* .compruebaDivicion{
     background:#36e2ec;
     align-items: center;
     justify-content: center;
@@ -124,12 +150,12 @@ input:hover{
     font-weight: 400;
     transition: .5s linear;
     cursor: pointer;
-}
-.compruebaDivicion:hover {
+} */
+/* .compruebaDivicion:hover {
    background: none;
   border: 2px solid #36e2ec;	
    color: gray;
-}
+} */
 
 
 
@@ -203,7 +229,7 @@ button:hover{
         line-height: 1.5;
 }
 
-.resultadoTotal{
+/* .resultadoTotal{
    background:#36e2ec;
     width: 260px;
     height: 30px;
@@ -219,13 +245,13 @@ button:hover{
    font-weight: 400;
     transition: .5s linear;
    cursor: pointer;
-}
+} */
 
-.resultadoTotal:hover{
+/* .resultadoTotal:hover{
 background:none;
 border: 2px solid #36e2ec;
 color: gray; 
-}
+} */
 
 .resultadoTotal2{
     margin: 20px;

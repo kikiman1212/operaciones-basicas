@@ -89,12 +89,14 @@ function comprobarMultiplicacion(){
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
+    document.querySelector('.resultadoTotal').diabled;  
     }else{
         document.querySelector('.resultado').innerHTML=(`Incorrecto ❌😥, El Resultado correcto de ${a} ✖ ${b} es:<span> ${multiplicacionCorrecta}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;
 	sonidoError.play();
+    document.querySelector('.resultadoTotal').diabled;  
     }
     preguntarMultiplicacion();
     }
