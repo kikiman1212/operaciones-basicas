@@ -40,6 +40,7 @@ h1{
         font-weight: bold; 
 }
 h3{
+
 color: red;
 }
 
@@ -54,8 +55,7 @@ color: red;
 }
 
 .mainSuma{
-    margin-top:20px;
-    
+    margin-top:10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ color: red;
 
 
 .main2{
-    margin:20px;
+    margin:10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -265,14 +265,31 @@ i{
     font-size: 25px;
     color: black;
 }
+
+.bi-spotify{
+color: green;
+}
  a{
 text-decoration: none;
 }
+
+
 @media only screen and (max-width: 620px){
 
     .navbar-brand{
         display: none;
         }
+
+        h3{
+            font-size: 15px;
+            color: red;
+            }
+p {
+ font-weight: 500;
+ font-size: 15px;
+ color: black;
+            }
+            
 .resultado{
 width:250px;
 height:200px;
@@ -291,11 +308,13 @@ font-size: 15px;
 input{
     width: 80px;
     height: 60px;
-    font-family: fantasy;
     font-size: 30px;
 }
 
+.resultadofinal{
+font-size: 15px;
 
+}
 
 .resultadoTotal, .comprueba{
 font-size:15px;

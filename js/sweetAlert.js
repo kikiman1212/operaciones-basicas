@@ -2,22 +2,21 @@
 
 (async() => {
     const {value: Operaciones} = await Swal.fire({
-        title: 'Bienvenido a mi pagina de Operaciones Basicas', 
+        title: 'Bienvenido a mi página de operaciones básicas', 
         text: 'Te saluda Kiko',
         icon: '',
-        confirmButtonText: 'Seleciona tu Escolaridad',
-        footer: 'Te presento una pequeña guia basica de practicar operaciones',
+        confirmButtonText: 'Selecciona tu Escolaridad',
+        footer: 'Te presento una pequeña guía básica  de practicar operaciones',
         imageUrl: './img/multi.jpg',
         imageWidth: '400px',
         imageAlt: 'Operaciones',
-        input:"select",
         inputPlacehoolder:'Ingresa Grado de Escolaridad',
+        input:"select",
         inputValue: '',
         inputOptions: {
             Kinder: 'Kinder',
             Primaria: 'Primaria',
             Secundaria: 'Secundaria',
-            Preparatoria: 'Preparatoria'
         }
         });
         if (Operaciones){
@@ -29,6 +28,9 @@
         }
 
 })()
+
+
+
 
 
 

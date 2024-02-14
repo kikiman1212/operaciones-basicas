@@ -25,29 +25,33 @@ function inicio(){
    dibujarMonedas();
    dibujarFallas();
    
-    document.querySelector('.comprueba').onclick = comprobar;
-    document.querySelector('.compruebaMultiplicacion').onclick = comprobarMultiplicacion;
-    document.querySelector('.resultadoTotal').onclick = resultadoFinal;
+    document.querySelector('#resultadoMultiplicacion').onclick = comprobarMultiplicacion;
+    document.querySelector('#resultadoTotal').onclick = resultadoFinal;
 }
 
 function resultadoFinal(){
         let resul = monedas - fallas;
 	if(resul > fallas){
 	document.querySelector('.resultadoTotal2').style.display ='flex';
-	document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span>${resul}</span> 🏆 Eres un Master sigue asi campeón<img src="img/gif/victory.gif"> <img src="img/gif/5.gif" >`);
+	document.querySelector('.resultadoTotal2').innerHTML = (`<div class="container">Tu resultado Final es:<span>${resul}</span> <i class="bi bi-controller"><br></i><img src="img/gif/victory.gif"><br> <i class="bi bi-trophy-fill"></i> Eres un Master sigue asi campeón <img src="img/gif/5.gif" ><i class="bi bi-balloon"></i></container>`);
 	sonidoGanador.play();
+    document.querySelector('#resultadoTotal').style.display ='none';  
+    document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.mainMultiplicacion').style.display ='none';
 document.querySelector('.main2').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 }else{
+document.querySelector('#resultadoTotal').style.display ='none'; 
+document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
-sonidoGameOver.play();        
+sonidoGameOver.play();  
+document.querySelector('.mainMultiplicacion').style.display ='none';     
 }
 
 }
@@ -89,14 +93,14 @@ function comprobarMultiplicacion(){
 	document.querySelector('.monedas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/1.png">`);
 	monedas++;
 	sonido1.play();
-    document.querySelector('.resultadoTotal').diabled;  
+    
     }else{
         document.querySelector('.resultado').innerHTML=(`Incorrecto ❌😥, El Resultado correcto de ${a} ✖ ${b} es:<span> ${multiplicacionCorrecta}</span>😎😑.`);
         document.querySelector('.resultado').style.color = "red";
 	document.querySelector('.fallas').insertAdjacentHTML("beforeend",`<img class="kiko" src="img/2.jpg">`);
 	fallas++;
 	sonidoError.play();
-    document.querySelector('.resultadoTotal').diabled;  
+     
     }
     preguntarMultiplicacion();
     }

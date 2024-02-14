@@ -26,9 +26,9 @@ function inicio(){
    dibujarFallas();
    
  
-    document.querySelector('.compruebaResta').onclick = comprobarResta;
+    document.querySelector('#compruebaResta').onclick = comprobarResta;
   
-    document.querySelector('.resultadoTotal').onclick = resultadoFinal;
+    document.querySelector('#resultadoTotal').onclick = resultadoFinal;
 }
 
 function resultadoFinal(){
@@ -38,12 +38,14 @@ function resultadoFinal(){
 	document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> 🏆 Eres un Master sigue asi campeón<img src="img/gif/victory.gif"> <img src="img/gif/5.gif" >`);
 	sonidoGanador.play();
         document.querySelector('.resultado').style.display ='none';
+        document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
 document.querySelector('.main2').style.display ='none';
 document.querySelector('.mainResta').style.display ='none';
-document.querySelector('.resultadoTotal').diabled;
+document.querySelector('#resultadoTotal').style.display ='none';
 }else{
+    document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
@@ -52,7 +54,7 @@ document.querySelector('.mainResta').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
 sonidoGameOver.play();  
-document.querySelector('.resultadoTotal').diabled;      
+document.querySelector('#resultadoTotal').style.display ='none';     
 }
 preguntar();
 }

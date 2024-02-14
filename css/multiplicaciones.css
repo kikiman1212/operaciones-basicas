@@ -251,7 +251,6 @@ button:hover{
    background:#36e2ec;
     width: 260px;
     height: 30px;
-    width:300px;
     position: relative;
     display: flex;
     text-align: center;
@@ -274,8 +273,8 @@ color: gray;
 
 .resultadoTotal2{
     margin: 20px;
-    width: 500px;
-    height: 480px;
+    width: 700px;
+    height: 550px;
     background: #1b2688;
     position: relative;
     border-radius: 10px;
@@ -316,13 +315,59 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
 }
 
+.bi-youtube{
+    font-size: 25px;
+    color: red;
+}
+
+.bi-github{
+    font-size: 25px;
+    color: black;
+}
+
+.bi-tiktok{
+    font-size: 25px;
+    color: black;
+}
+.bi-spotify{
+    font-size: 25px;
+    color: green;
+}
+
+.bi-controller{
+    font-size: 25px;
+    color: red;
+}
+.bi-trophy-fill{
+    font-size: 25px;
+    color: yellow;
+}
+
+.bi-balloon{
+    font-size: 25px;
+    color: rgb(213, 21, 130);
+}
 
 
+
+
+
+
+
+
+
+#inicio{
+    display: none;
+}
 
 
 
 @media only screen and (max-width: 620px){
 
+    h3 {
+        font-size: 20px;
+        color: red;
+    }
     .navbar-brand{
         display: none;
         }
@@ -337,7 +382,11 @@ font-size: 20px;
 font-size:15px;
 height: 25px;
 }
-
+.resultadoTotal2{
+    margin: 20px;
+    width: 400px;
+    height: 480px;
+}
 h2{
 font-size:15px;
 
@@ -358,5 +407,19 @@ font-size: 15px;
     width: 200px;
 }
 
-
+.resultadofinal{
+    font-size: 15px;
+    
+    }
+    
+    .resultadoTotal, .comprueba{
+    font-size:15px;
+    height: 25px;
+    }
+    
+    h2{
+    font-size:15px;
+    
+    }
+    
 }

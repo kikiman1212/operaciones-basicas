@@ -231,7 +231,7 @@ color: gray;
 
 .resultadoTotal2{
     margin: 20px;
-    width: 500px;
+    width: 400px;
     height: 460px;
     background: #1b2688;
     position: relative;
@@ -290,11 +290,24 @@ i{
 }
 
 
+.bi-spotyfi{
+    font-size: 25px;
+    color: green;
+}
+
+
+#inicio{
+    display: none;
+}
 
 @media only screen and (max-width: 620px){
 
     .navbar-brand{
         display: none;
+        }
+        h3 {
+            font-size: 20px;
+            color: red;
         }
 
 .resultado{
@@ -318,5 +331,19 @@ font-size:15px;
 
 }
 
-
+.resultadofinal{
+    font-size: 15px;
+    
+    }
+    
+    .resultadoTotal, .comprueba{
+    font-size:15px;
+    height: 25px;
+    }
+    
+    h2{
+    font-size:15px;
+    
+    }
+    
 }

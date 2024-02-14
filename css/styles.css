@@ -45,31 +45,8 @@ position: relative;
     z-index: 1;
 }
 
-/*formulario*/
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
 
-form {
-  border-radius: 5px;
-  background-color: #ccc8c8;
-  padding: 20px;
-  width: 100%;
-}
 
-/*Video de Youtube*/
-iframe{
-  border-radius: 4px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 
 article{
   text-align: center;
@@ -86,19 +63,51 @@ a{
   margin-left: 10px;
 }
 i{
+  margin-left: 12px;
   font-size: 25px;
-  color: red;
 }
 
+.bi-youtube{
+  font-size: 30px;
+  color: red;
+}
 .bi-github{
-  font-size: 25px;
+  font-size: 30px;
   color: black;
 }
 
 .bi-tiktok{
-  font-size: 25px;
+  font-size: 30px;
   color: black;
 }
+.bi-spotify{
+  color: green;
+  font-size: 30px;
+  }
+.bi-x-lg{
+  color: yellow;
+  font-size: 40px;
+  font-weight: 700;
+  }
+.bi-plus-lg{
+  color: blue;
+  font-size: 40px;
+  }
+.bi-slash-lg{
+  color: red;
+  font-size: 40px;
+  }
+.bi-dash-lg{
+  color: green;
+  font-size: 40px;
+  }
+
+
+
+
+   a{
+  text-decoration: none;
+  }
 
 @media only screen and (max-width: 620px){
 

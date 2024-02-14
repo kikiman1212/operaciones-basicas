@@ -67,7 +67,7 @@ color: red;
 
 
 .main2{
-    margin:20px;
+    margin:10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ color: red;
 }
 
 .main3{
-    margin-top:20px;
+    margin-top:10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -134,6 +134,14 @@ i{
     font-size: 25px;
     color: black;
 }
+
+
+.bi-spotyfi{
+    font-size: 25px;
+    color: green;
+}
+
+
  a{
 text-decoration: none;
 }
@@ -321,10 +329,7 @@ font-size:15px;
 height: 25px;
 }
 
-h2{
-font-size:15px;
 
-}
 
 .resultadoTotal2 {
 width: 350px;
@@ -335,6 +340,28 @@ font-size: 15px;
     margin: 5px;
     width: 200px;
 }
-
-
+.resultadofinal{
+    font-size: 15px;
+    
+    }
+    
+    .resultadoTotal, .comprueba{
+    font-size:15px;
+    height: 25px;
+    }
+    
+    h2{
+    font-size:15px;
+    
+    }
+    h3{
+    font-size:15px;
+    
+    }
+    
+    p {
+    
+        font-size: 15px;
+        color: black;
+    }
 }
