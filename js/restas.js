@@ -45,7 +45,7 @@ document.querySelector('.main2').style.display ='none';
 document.querySelector('.mainResta').style.display ='none';
 document.querySelector('#resultadoTotal').style.display ='none';
 }else{
-    document.querySelector('#inicio').style.display ='flex';  
+document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.monedas').style.display ='none';
 document.querySelector('.fallas').style.display ='none';
@@ -53,10 +53,9 @@ document.querySelector('.main2').style.display ='none';
 document.querySelector('.mainResta').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
+document.querySelector('#resultadoTotal').style.display ='none';  
 sonidoGameOver.play();  
-document.querySelector('#resultadoTotal').style.display ='none';     
 }
-preguntar();
 }
 
 ////////////////////////////////////////////////////////////////- MONEDAS- ///////////////////////////////////////////////////////////////////////////////////////

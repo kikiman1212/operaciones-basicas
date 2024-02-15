@@ -25,18 +25,19 @@ function inicio(){
    dibujarMonedas();
    dibujarFallas();
    
-    document.querySelector('#resultadoMultiplicacion').onclick = comprobarMultiplicacion;
-    document.querySelector('#resultadoTotal').onclick = resultadoFinal;
+document.querySelector('#resultadoMultiplicacion').onclick = comprobarMultiplicacion;
+document.querySelector('#resultadoTotal').onclick = resultadoFinal;
 }
 
 function resultadoFinal(){
         let resul = monedas - fallas;
 	if(resul > fallas){
-	document.querySelector('.resultadoTotal2').style.display ='flex';
-	document.querySelector('.resultadoTotal2').innerHTML = (`<div class="container">Tu resultado Final es:<span>${resul}</span> <i class="bi bi-controller"><br></i><img src="img/gif/victory.gif"><br> <i class="bi bi-trophy-fill"></i> Eres un Master sigue asi campeón <img src="img/gif/5.gif" ><i class="bi bi-balloon"></i></container>`);
-	sonidoGanador.play();
-    document.querySelector('#resultadoTotal').style.display ='none';  
-    document.querySelector('#inicio').style.display ='flex';  
+document.querySelector('.resultadoTotal2').style.display ='flex';
+document.querySelector('.resultadoTotal2').innerHTML = (`<div class="container">Tu resultado Final es:<span>${resul}</span> <i class="bi bi-controller"><br></i><img src="img/gif/victory.gif"><br><i class="bi bi-trophy-fill"></i>Eres un Master sigue asi campeón <img src="img/gif/5.gif" ></container>`);
+sonidoGanador.play();
+document.querySelector('#resultadoMultiplicacion').style.display ='none';  
+document.querySelector('#resultadoTotal').style.display ='none';  
+document.querySelector('#inicio').style.display ='flex';  
 document.querySelector('.resultado').style.display ='none';
 document.querySelector('.mainMultiplicacion').style.display ='none';
 document.querySelector('.main2').style.display ='none';
@@ -51,14 +52,12 @@ document.querySelector('.fallas').style.display ='none';
 document.querySelector('.resultadoTotal2').style.display ='flex';
 document.querySelector('.resultadoTotal2').innerHTML = (`Tu resultado Final es:<span > ${resul}</span> ⚠❌ Sigue practicando <img src="img/gif/game over1.jpg"><img src="img/gif/3.gif">`);
 sonidoGameOver.play();  
-document.querySelector('.mainMultiplicacion').style.display ='none';     
+document.querySelector('.mainMultiplicacion').style.display ='none';  
+document.querySelector('#resultadoMultiplicacion').style.display ='none';     
 }
 
 }
-
-
-
-////////////////////////////////////////////////////////////////- MONEDAS- ///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////- MONEDAS- ///////////////////////////////////////////////////////////////////////////////////////
 function dibujarMonedas(){
     let m = document.querySelector(".monedas");
 	m.innerHTML = "";
@@ -74,15 +73,6 @@ function dibujarFallas(){
 	m.insertAdjacentHTML("beforeend",`<img src="img/1.jpg">`);
 }
 }
-/////////////////////////////////nuevas de imagen
-
-///////////////////////////////////////////////////////////////////- QUE QUEDE SUMA Y ESCONDER LAS OTRAS OPERACIONES- ///////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
 
 //MULTIPLICACIONES
 function comprobarMultiplicacion(){

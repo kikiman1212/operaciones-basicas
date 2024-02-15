@@ -13,6 +13,10 @@ body{
   font-family: 'Poppins', sans-serif;
  
 }
+nav{
+    background-color: #1b1b32 ;
+    font-family: 'Rubik Dirt','Poppins', sans-serif;
+  }
 
 section{
     width: 75%;
@@ -51,7 +55,6 @@ color: red;
     justify-content: center;
     align-items: center;
     z-index: 2;
-
 }
 
 .mainMultiplicacion{
@@ -61,9 +64,7 @@ color: red;
     justify-content: center;
     align-items: center;
     z-index: 2;
-
 }
-
 
 .main2{
     margin:20px;
@@ -96,7 +97,7 @@ color: red;
 }
 
 input{
-    background-color: #203ac8d9;
+    background-color: #1b1b32;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -110,9 +111,9 @@ input{
 }
 
 input:hover{
-   cursor: pointer;
-   border: #fff solid 4px;
-}
+    cursor: pointer;
+    border: #36e2ec solid 4px;
+  }
 
 .comprueba{
     background:#36e2ec;
@@ -135,7 +136,6 @@ input:hover{
   border: 2px solid #36e2ec;	
    color: gray;
 }
-
 
 .compruebaSumas{
    background-color: green;
@@ -169,18 +169,6 @@ input:hover{
    color: gray;
 }
 
-
-
-
-
-
-
-
-button:hover{
-   cursor: pointer;
-   border: #fff solid 4px;
-}
-
 .resul{
    display: flex;
    align-items: center;
@@ -191,7 +179,7 @@ button:hover{
   .resultado {
     width: 500px;
     height: 250px;
-    background: #1b2688;
+    background: #1b1b32;
     position: relative;
     border-radius: 10px;
     text-align: center;
@@ -220,10 +208,10 @@ button:hover{
 	height: 80px;
 	border-radius: 10px;
 	backdrop-filter: blur(30px);
-        border: 2px solid green;
-        background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
-        line-height: 1.5;
+    border: 2px solid green;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
+    line-height: 1.5;
 }
 
 .fallas{
@@ -233,18 +221,16 @@ button:hover{
 }
 
 .fallas img{
-	
-	
 	width:50px;
 	margin:2px;
 	height: 80px;
 	background-color: rgba(255,255,255,0.1);
-        border-radius: 10px;
+    border-radius: 10px;
 	backdrop-filter: blur(30px);
-        border: 2px solid red;
-        background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
-        line-height: 1.5;
+    border: 2px solid red;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45,55,68,0.0.3);
+    line-height: 1.5;
 }
 
 .resultadoTotal{
@@ -270,12 +256,11 @@ border: 2px solid #36e2ec;
 color: gray; 
 }
 
-
 .resultadoTotal2{
     margin: 20px;
-    width: 700px;
-    height: 550px;
-    background: #1b2688;
+    width: 360px;
+    height: 280px;
+    background: #1b1b32;
     position: relative;
     border-radius: 10px;
     border: white solid 4px;
@@ -283,7 +268,7 @@ color: gray;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-family: fantasy;
+    font-family: Poppins;
     font-size: 20px;
     z-index: 30;
     color: #fff;
@@ -296,13 +281,10 @@ margin: 5px;
 width: 220px;
 
 }
-p{font-family: fantasy, serif;
+title p{font-family: Poppins, serif;
     font-size: 20px;
     color: black;
 }
-
-
-
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -322,12 +304,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .bi-github{
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 .bi-tiktok{
     font-size: 25px;
-    color: black;
+    color: white;
 }
 .bi-spotify{
     font-size: 25px;
@@ -348,13 +330,9 @@ input[type=number]::-webkit-outer-spin-button {
     color: rgb(213, 21, 130);
 }
 
-
-
-
-
-
-
-
+button:hover{
+    border: #36e2ec solid 4px;
+ }
 
 #inicio{
     display: none;
@@ -384,7 +362,7 @@ height: 25px;
 }
 .resultadoTotal2{
     margin: 20px;
-    width: 400px;
+    width: 360px;
     height: 480px;
 }
 h2{

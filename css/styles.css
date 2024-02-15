@@ -14,7 +14,26 @@ body{
   font-family: 'Poppins', sans-serif;
  
 }
+nav{
+  background-color: #1b1b32 ;
+  font-family: 'Rubik Dirt','Poppins', sans-serif;
+ 
+}
 
+.navbar-nav li a{
+  color: #fff;
+}
+
+.navbar-nav li a:hover{
+  color: #36e2ec;
+}
+.navbar-nav li a .active{
+  color: #36e2ec;
+}
+
+.navbar-nav .nav-link.active{
+  color: #36e2ec;
+}
 
 .subtitle{
   color: red;
@@ -51,9 +70,7 @@ position: relative;
 article{
   text-align: center;
 }
-.active{
-  background: #36e2ec;
-}
+
 
 p{
   margin-bottom: 20px ;
@@ -73,12 +90,12 @@ i{
 }
 .bi-github{
   font-size: 30px;
-  color: black;
+  color: white;
 }
 
 .bi-tiktok{
   font-size: 30px;
-  color: black;
+  color: white;
 }
 .bi-spotify{
   color: green;
@@ -90,6 +107,7 @@ i{
   font-weight: 700;
   }
 .bi-plus-lg{
+  margin-left: -20px;
   color: blue;
   font-size: 40px;
   }
@@ -102,11 +120,14 @@ i{
   font-size: 40px;
   }
 
-
-
-
    a{
   text-decoration: none;
+  }
+
+  footer{
+    background-color:#1b1b32;
+    color: #fff;
+    margin-bottom: 0;
   }
 
 @media only screen and (max-width: 620px){
@@ -114,5 +135,17 @@ i{
   .navbar-brand{
       display: none;
       }
+      .navbar-nav{
+        background-color: #1b1b32;
+      }
+      
+      .navbar-nav li a{
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Rubik Dirt','Poppins', sans-serif;
+      }
+      button:hover{
+        border: #36e2ec solid 4px;
+     }
 
     }

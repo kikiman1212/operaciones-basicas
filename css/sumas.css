@@ -11,6 +11,12 @@ body{
   font-family: 'Poppins', sans-serif;
  
 }
+
+nav{
+    background-color: #1b1b32 ;
+    font-family: 'Rubik Dirt','Poppins', sans-serif;
+   
+  }
 section{
     width: 75%;
     height: 100%;
@@ -97,7 +103,7 @@ color: red;
 }
 
 input{
-    background-color: #203ac8d9;
+    background-color: #1b1b32;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -111,12 +117,6 @@ input{
     transition: .5s linear;
     cursor: pointer;
 }
-
-input:hover{
-   cursor: pointer;
-   border: #fff solid 4px;
-}
-
 
 
 .compruebaSumas{
@@ -133,9 +133,7 @@ input:hover{
 }
 
 button:hover{
-   
-   width: 260px;
-   border: #fff solid 4px;
+   border: #36e2ec solid 4px;
 }
 
 .resul{
@@ -148,7 +146,7 @@ button:hover{
   .resultado {
     width: 500px;
     height: 250px;
-    background: #1b2688;
+    background: #1b1b32;
     position: relative;
     border-radius: 10px;
     text-align: center;
@@ -204,17 +202,16 @@ button:hover{
 
 .resultadoTotal2{
     margin: 20px;
-    width: 500px;
+    width: 360px;
     height: 480px;
-    background: #1b2688;
+    background: #1b1b32;
     position: relative;
     border-radius: 10px;
-    border: white solid 4px;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-family: fantasy;
+    font-family: Poppins;
     font-size: 20px;
     z-index: 30;
     color: #fff;
@@ -222,12 +219,14 @@ button:hover{
     display: none;
 }
 
+
+
 .resultadoTotal2 img{
 margin: 5px;	
 width: 220px;
 
 }
-p{font-family: fantasy, serif;
+title p{font-family: Poppins, serif;
     font-size: 20px;
     color: black;
 }
@@ -258,12 +257,12 @@ i{
 
 .bi-github{
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 .bi-tiktok{
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 .bi-spotify{
@@ -284,11 +283,7 @@ text-decoration: none;
             font-size: 15px;
             color: red;
             }
-p {
- font-weight: 500;
- font-size: 15px;
- color: black;
-            }
+
             
 .resultado{
 width:250px;
@@ -316,6 +311,11 @@ font-size: 15px;
 
 }
 
+.resultadoTotal2{
+    margin: 20px;
+    width: 360px;
+    height: 480px;
+}
 .resultadoTotal, .comprueba{
 font-size:15px;
 height: 25px;
