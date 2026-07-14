@@ -238,6 +238,15 @@ input:hover{
     flex-direction: column;
 }
 
+/* Ajusta la clase del contenedor donde se muestra el resultado correcto/incorrecto */
+.resultado-container { /* Cambia por el nombre de tu clase contenedora */
+    background-color: #111827;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 500px; /* Evita que se estire demasiado a lo ancho */
+    margin: 20px auto; /* Lo centra horizontalmente */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
 
 
 .monedas{	
@@ -321,6 +330,21 @@ color: gray;
     flex-direction: column;
     display: none;
 }
+/* Contenedor padre de las monedas y fallas */
+.marcardores-global {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Estilo para el contenedor de monedas y el de fallas */
+.monedas, .fallas {
+    background: #1e293b;
+    border-radius: 50px; /* Forma de píldora */
+    padding: 8px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
 .resultadoTotal2 img{
 margin: 5px;	
@@ -336,6 +360,25 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+#resultadoMultiplicacion, #resultadoTotal {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+#resultadoMultiplicacion:hover {
+    transform: translateY(-2px); /* Efecto de flotar */
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.4);
+}
+
+#resultadoMultiplicacion:active {
+    transform: translateY(0); /* Efecto de hundirse al presionar */
 }
 
 .resultado span{
