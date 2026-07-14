@@ -18,6 +18,27 @@ nav{
     font-family: 'Rubik Dirt','Poppins', sans-serif;
   }
 
+/* Ejemplo de estructura para tu menú */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: #0b0f19; /* Un tono oscuro más profundo */
+    padding: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8; /* Azul brillante estilo gaming */
+}
+
 section{
     width: 75%;
     height: 100%;
@@ -94,6 +115,31 @@ color: red;
 .main3 iframe:hover{
 	 border-radius:10px;
 	border: #10bcd2 solid 4px;
+}
+
+/* Aplica esto a las cajas de los números (mult1, mult2) y al input (mult3) */
+.mult1, .mult2, .mult3 {
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 12px; /* Esquinas curvas modernas */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+/* Estilo exclusivo para resaltar el campo donde el usuario escribe */
+.mult3 {
+    border-color: #38bdf8; /* Borde azul para indicar que es interactivo */
+    background: #0f172a;
+}
+
+.mult3:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.4); /* Brillo al hacer foco */
 }
 
 input{
