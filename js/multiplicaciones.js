@@ -48,9 +48,9 @@ function resultadoFinal(){
             <div class="container text-center mt-3">
                 <h4>Tu resultado Final es: <span class="badge bg-success">${resul}</span></h4> 
                 <i class="bi bi-controller fs-2"></i><br>
-                <img src="victory.gif" class="img-fluid my-2" style="max-width:200px;"><br>
+                <img src="img/gif/victory.gif" class="img-fluid my-2" style="max-width:200px;"><br>
                 <i class="bi bi-trophy-fill text-warning fs-1"></i> Eres un Master, sigue así campeón 
-                <img src="5.gif" style="max-width:50px;">
+                <img src="img/gif/5.gif" style="max-width:50px;">
             </div>`;
         sonidoGanador.play();
     } else {
@@ -59,8 +59,8 @@ function resultadoFinal(){
             <div class="container text-center mt-3">
                 <h4>Tu resultado Final es: <span class="badge bg-danger">${resul}</span></h4> 
                 <p class="text-danger fw-bold">⚠❌ Sigue practicando</p>
-                <img src="game over1.jpg" class="img-fluid my-2" style="max-width:200px;">
-                <img src="3.gif" class="img-fluid" style="max-width:50px;">
+                <img src="img/gif/game over1.jpg" class="img-fluid my-2" style="max-width:200px;">
+                <img src="img/gif/3.gif" class="img-fluid" style="max-width:50px;">
             </div>`;
         sonidoGameOver.play();  
     }
@@ -82,7 +82,7 @@ function dibujarMonedas(){
     // Insertamos la imagen y el número de monedas actuales usando un contenedor flex para alinearlos
     m.innerHTML = `
         <div style="display: flex; align-items: center; gap: 8px;">
-            <img class="kiko" src="1.png" style="width: 30px;">
+            <img class="kiko" src="img/1.png" style="width: 30px;">
             <span style="font-size: 20px; font-weight: bold; color: green;">x ${monedas}</span>
         </div>
     `;
@@ -94,7 +94,7 @@ function dibujarFallas(){
     // Insertamos la imagen y el número de fallas actuales alineados de la misma manera
     f.innerHTML = `
         <div style="display: flex; align-items: center; gap: 8px;">
-            <img class="kiko" src="2.jpg" style="width: 30px;">
+            <img class="kiko" src="img/2.jpg" style="width: 30px;">
             <span style="font-size: 20px; font-weight: bold; color: red;">x ${fallas}</span>
         </div>
     `;
